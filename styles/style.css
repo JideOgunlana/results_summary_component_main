@@ -1,0 +1,197 @@
+/*
+    base styles
+*/
+
+
+:root {
+    --primary-light-red: hsla(0, 100%, 67%);
+    --primary-light-red-alpha: hsla(0, 100%, 67%, 0.1);
+    --primary-orange-yellow: hsla(39, 100%, 56%);
+    --primary-orange-yellow-alpha: hsla(39, 100%, 56%, 0.1);
+    --primary-green-teal: hsla(166, 100%, 37%);
+    --primary-green-teal-alpha: hsla(166, 100%, 37%, 0.1);
+    --primary-cobalt-blue: hsla(234, 85%, 45%);
+    --primary-cobalt-blue-alpha: hsla(234, 85%, 45%, 0.1);
+
+    --bg-gradient-light-slate-blue: hsl(252, 100%, 67%);
+    --bg-gradient-light-royal-blue: hsl(241, 81%, 54%);
+
+    --circle-gradient-violet-blue: hsla(256, 72%, 46%, 1);
+    --circle-gradient-persian-blue: hsla(241, 72%, 46%, 0);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-pale-blue: hsl(221, 100%, 96%);
+    --neutral-light-lavender: hsl(241, 100%, 89%);
+    --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+    --neutral-dark-gray-blue-alpha: hsl(224, 30%, 27%,0.4);
+
+    --body-font-size: 18px;
+
+    --light-font-weight: 500;
+    --bold-font-weight: 700;
+    --bolder-font-weight: 800;
+
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: var(--body-font-size);
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 100%;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.score-section {
+    background: linear-gradient(var(--bg-gradient-light-slate-blue), var(--bg-gradient-light-royal-blue));
+    text-align: center;
+    color: var(--neutral-light-lavender);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+}
+
+.score-section h2 {
+    color: var(--neutral-white);
+}
+
+.score-result {
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    justify-self: center;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(var(--circle-gradient-persian-blue), var(--circle-gradient-violet-blue));
+}
+
+.score-result h2 {
+    font-weight: var(--bolder-font-weight);
+    font-size: 4.2rem;
+    margin: 0;
+    width: 100%;
+}
+
+.score-result :last-child {
+    margin-top: 0;
+}
+
+.score-remark p {
+    /* border: 1px solid red; */
+    padding: 0 30px;
+}
+
+.summary-section {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+.summary-panel {
+    /* border: 1px solid; */
+    padding: 21px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.summary-reaction {
+    background-color: var(--primary-light-red-alpha);
+    color: var(--primary-light-red);
+}
+
+.summary-memory {
+    background-color: var(--primary-orange-yellow-alpha);
+    color: var(--primary-orange-yellow);
+}
+
+.summary-verbal {
+    background-color: var(--primary-green-teal-alpha);
+    color: var(--primary-green-teal);
+}
+
+.summary-visual {
+    background-color: var(--primary-cobalt-blue-alpha);
+    color: var(--primary-cobalt-blue);
+}
+
+.summary-icon {
+    width: 5%;
+    
+     /* flex: 1; */
+}
+
+.summary-info {
+    width: 20%;
+    
+     /* flex: 4; */
+}
+
+.summary-result {
+    width: 60%;
+    
+     /* flex: 10; */
+    text-align: right;
+    color: var(--neutral-dark-gray-blue-alpha);
+}
+
+.summary-result b {
+    color: var(--neutral-dark-gray-blue)
+}
+
+button.summary-btn{
+    font-size: var(--body-font-size);
+    padding: 21px;
+    border-radius: 40px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--neutral-dark-gray-blue);
+    color: var(--neutral-white);
+}
+
+button.summary-btn:hover {
+    background: linear-gradient(var(--circle-gradient-violet-blue), var(--bg-gradient-light-royal-blue));
+    cursor: pointer;
+}
+
+@media screen and (min-width: 760px) {
+
+
+    body {
+        justify-content: center;
+    }
+    .container {
+        grid-template-columns: repeat(2, 50%);
+        box-shadow: 10px 10px 10px 5px var(--neutral-pale-blue);
+        border-bottom-right-radius: 30px;
+        width: 70%;
+    }
+
+    .score-section {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+}
