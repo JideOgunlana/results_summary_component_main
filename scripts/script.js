@@ -9,6 +9,7 @@ let setScores = () => {
     const verbal = document.getElementById("verbal");
     const visual = document.getElementById("visual");
     const userScore = document.getElementById("user-score");
+    const rateScore = document.querySelector(".score-remark__rate");
     let result = 0;
 
     fetch("../data.json")
@@ -42,6 +43,7 @@ let setScores = () => {
                     break;
                 }
                 userScore.innerText = Math.floor(result / 4);
+                rateScore.innerText = Math.floor( (Math.floor(result / 4) * 65) / 76 );
             })
         }
     );
