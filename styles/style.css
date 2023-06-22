@@ -187,7 +187,7 @@ button.summary-btn:hover {
         grid-template-columns: repeat(2, 50%);
         box-shadow: 10px 10px 10px 5px var(--neutral-pale-blue);
         border-bottom-right-radius: 30px;
-        width: 70%;
+        width: 50%;
     }
 
     .score-section {
