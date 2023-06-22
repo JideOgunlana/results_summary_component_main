@@ -1,7 +1,3 @@
-// import data from "../data.json" assert {type: ".json"};
-
-
-
 let setScores = () => {
 
     const reaction = document.getElementById("reaction");
