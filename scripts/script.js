@@ -8,7 +8,7 @@ let setScores = () => {
     const rateScore = document.querySelector(".score-remark__rate");
     let result = 0;
 
-    fetch("../data.json")
+    fetch("data/data.json")
     .then(
         (response) => {
             if (response)
