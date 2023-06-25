@@ -15,7 +15,7 @@ Thanks for checking out this front-end coding challenge.
 
 The challenge is to build the results summary component and get it looking as close to the design as possible.
 
-Data in a local `data.json` file is provided to to add the results and total score dynamically.
+Data in a local `data.json` file is provided to add the results and total score dynamically.
 
 users should be able to:
 
@@ -43,7 +43,7 @@ users should be able to:
 - Vanilla JavaScript
 
 ### What I learned
-The challenge allowed me to build layout skills, starting from a mobile first approach.
+The challenge allowed me to build layout skills, starting from a mobile-first approach.
 
 ### Continued development
 - CSS gradients
