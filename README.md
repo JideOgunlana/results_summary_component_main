@@ -6,8 +6,8 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help to improve coding skills by building realistic projects.
-
+[Frontend Mentor](https://www.frontendmentor.io) challenges help to improve coding skills by building realistic projects.\
+`You can view the result at` [https://jideogunlana.github.io/results_summary_component_main/](https://jideogunlana.github.io/results_summary_component_main/)
 
 ## The challenge
 
